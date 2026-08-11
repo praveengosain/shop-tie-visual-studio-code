@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Tie Recommendations — Shoptie AI Stylist</title>
+  <meta name="description" content="Shoptie has analysed your outfit. View personalised tie recommendations with colours, patterns and styling advice.">
+  <meta name="theme-color" content="#14213D">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shoptie">
+  <meta property="og:title" content="Your Tie Recommendations — Shoptie AI Stylist">
+  <meta property="og:description" content="Personalised tie recommendations from Shoptie AI, matched to your outfit.">
+  <meta property="og:url" content="https://shoptie.co.uk/results">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Shoptie — home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">Shoptie<span>.</span></span>
+          <span class="brand-tag">AI Stylist</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <button class="nav-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+          <a href="index.html">Home</a>
+          <a href="stylist.html">AI Stylist</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-primary nav-cta" href="stylist.html">Find My Perfect Tie</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Empty state (shown by JS when no analysis exists yet) -->
+    <section class="section result-hero-empty" id="results-empty" style="display:none;">
+      <div class="container">
+        <div class="why-visual" style="max-width:680px; margin-inline:auto;">
+          <h3 style="color:#fff;">No results yet</h3>
+          <p>Upload a photo of your outfit first — then Shoptie AI will build your personalised tie recommendations here.</p>
+          <a class="btn btn-gold" href="stylist.html" style="margin-top:22px;">Analyse My Outfit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="results-title" id="results-main">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Your Results</span>
+          <h1 class="section-title" id="results-title">Your Perfect Tie Awaits</h1>
+          <p class="section-sub">Six styles matched to your outfit — here's why each one works.</p>
+        </div>
+
+        <!-- Outfit summary -->
+        <div class="result-summary" id="result-summary">
+          <div class="result-photo">
+            <img id="result-photo" alt="Your outfit">
+          </div>
+          <div class="result-info">
+            <h2 id="result-heading">Your Outfit — Analysed</h2>
+            <p>Here's what Shoptie noticed about your outfit and how we scored each tie.</p>
+            <ul class="analysis-tags" id="analysis-tags"></ul>
+            <div class="palette" id="result-palette" aria-label="Dominant colours in your outfit"></div>
+          </div>
+        </div>
+
+        <!-- Recommendations injected by JS -->
+        <div class="reco-grid" id="reco-grid"></div>
+        <p class="demo-note" id="reco-note"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Shoptie — home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span>
+              <span class="brand-name">Shoptie<span>.</span></span>
+              <span class="brand-tag">AI Stylist</span>
+            </span>
+          </a>
+          <p>AI-powered tie styling.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" aria-label="Featured">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="stylist.html#demo">Try a Demo</a></li>
+            <li><a href="results.html">Sample Results</a></li>
+            <li><a href="stylist.html">Upload Your Outfit</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Shoptie. All rights reserved.</span>
+        <span>Made with care in the UK · Shoptie.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tie-svg.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/results.js"></script>
+</body>
+</html>

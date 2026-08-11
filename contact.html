@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Shoptie — We'd Love to Hear From You</title>
+  <meta name="description" content="Get in touch with the Shoptie team about the AI Stylist, partnerships, or UK tie retailer enquiries.">
+  <meta name="theme-color" content="#14213D">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shoptie">
+  <meta property="og:title" content="Contact Shoptie">
+  <meta property="og:description" content="Get in touch with the Shoptie team about the AI Stylist, partnerships, or UK tie retailer enquiries.">
+  <meta property="og:url" content="https://shoptie.co.uk/contact">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Shoptie — home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">Shoptie<span>.</span></span>
+          <span class="brand-tag">AI Stylist</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <button class="nav-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+          <a href="index.html">Home</a>
+          <a href="stylist.html">AI Stylist</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="btn btn-primary nav-cta" href="stylist.html">Find My Perfect Tie</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="contact-title">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 id="contact-title">We'd love to hear from you</h1>
+        <p>Questions about the AI Stylist, a partnership idea, or a retailer enquiry — drop us a line.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container" style="display:grid; grid-template-columns: 1.4fr 1fr; gap: 34px; align-items:start;">
+        <div class="panel reveal">
+          <h2>Send a message</h2>
+          <p style="margin-bottom:22px;">Fields marked with * are required.</p>
+          <form class="form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Your name *</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General enquiry</option>
+                <option value="stylist">AI Stylist question</option>
+                <option value="retailer">Retailer / partnership</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+              <p class="form-note" style="margin-top:12px;">Demo mode — messages are not sent to a server yet. Your message is stored locally on your device only.</p>
+            </div>
+          </form>
+          <div class="form-success" id="form-success" role="status">
+            Thank you! Your message has been received. We'll be in touch shortly — and in the meantime, why not try the AI Stylist?
+            <div style="margin-top:18px;"><a class="btn btn-outline" href="stylist.html">Try Shoptie AI</a></div>
+          </div>
+        </div>
+
+        <aside class="panel reveal">
+          <h2>Other ways to reach us</h2>
+          <p><strong>Retailer &amp; partnership enquiries</strong><br>We're looking for UK tie retailers who want AI-powered styling recommendations driving qualified leads.</p>
+          <p style="margin-top:16px;"><strong>Email</strong><br><a href="mailto:hello@shoptie.co.uk" style="color:var(--navy); text-decoration:underline; text-underline-offset:3px;">hello@shoptie.co.uk</a></p>
+          <p style="margin-top:16px;"><strong>Response time</strong><br>We aim to reply within two working days.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Shoptie — home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span>
+              <span class="brand-name">Shoptie<span>.</span></span>
+              <span class="brand-tag">AI Stylist</span>
+            </span>
+          </a>
+          <p>AI-powered tie styling.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" aria-label="Featured">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="stylist.html#demo">Try a Demo</a></li>
+            <li><a href="results.html">Sample Results</a></li>
+            <li><a href="stylist.html">Upload Your Outfit</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Shoptie. All rights reserved.</span>
+        <span>Made with care in the UK · Shoptie.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

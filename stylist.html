@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Stylist | Upload Your Outfit — Shoptie</title>
+  <meta name="description" content="Upload a photo of your shirt, suit or coat and let Shoptie AI analyse your outfit and recommend the perfect tie colours and styles.">
+  <meta name="theme-color" content="#14213D">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shoptie">
+  <meta property="og:title" content="AI Stylist | Upload Your Outfit — Shoptie">
+  <meta property="og:description" content="Upload a photo of your outfit and let Shoptie AI recommend the perfect tie for it.">
+  <meta property="og:url" content="https://shoptie.co.uk/stylist">
+  <meta property="og:image" content="https://shoptie.co.uk/assets/images/hero-suit.svg">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Shoptie — home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">Shoptie<span>.</span></span>
+          <span class="brand-tag">AI Stylist</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <button class="nav-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+          <a href="index.html">Home</a>
+          <a href="stylist.html" aria-current="page">AI Stylist</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-primary nav-cta" href="stylist.html">Find My Perfect Tie</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="stylist-page-title">
+      <div class="container">
+        <span class="eyebrow">AI Stylist</span>
+        <h1 id="stylist-page-title">Upload Your Outfit</h1>
+        <p>Upload a photo of your shirt, suit or coat and Shoptie AI will analyse the colours, pattern and formality — then recommend the ties that suit you best.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="stylist-interactive-title" style="padding-top:0;">
+      <div class="container">
+        <div class="stylist-card">
+          <h2 id="stylist-interactive-title" style="font-size:24px; text-align:center; margin-bottom:24px;">Get your personalised tie recommendations</h2>
+
+          <!-- Upload panel -->
+          <div id="upload-panel">
+            <div class="dropzone" id="dropzone">
+              <input type="file" id="image-input" accept="image/jpeg,image/png,image/webp" aria-label="Choose an image of your outfit">
+              <div class="dropzone-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+              </div>
+              <div class="dropzone-title">Drag &amp; drop your image here</div>
+              <div class="dropzone-or">or</div>
+              <div class="dropzone-btn">Choose an Image</div>
+              <div class="dropzone-formats">Supported formats: JPG, PNG, WEBP</div>
+              <p class="dropzone-error" id="dropzone-error"></p>
+            </div>
+
+            <div style="text-align:center; margin-top:20px;">
+              <button class="btn btn-ghost" id="demo-sample-blue" type="button">Try a Demo Outfit</button>
+            </div>
+
+            <!-- Preview -->
+            <div class="preview" id="preview" aria-live="polite">
+              <div class="preview-head">
+                <span class="label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:6px;"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg>Your outfit</span>
+                <div class="preview-actions">
+                  <button type="button" id="change-image">Change image</button>
+                  <button type="button" class="remove" id="remove-image">Remove</button>
+                </div>
+              </div>
+              <div class="preview-frame">
+                <img id="preview-img" alt="Preview of your uploaded outfit">
+              </div>
+            </div>
+
+            <div style="display:grid; justify-content:center; gap:12px; margin-top:26px;">
+              <button class="btn btn-primary btn-lg" id="analyse-btn" type="button" disabled>
+                Analyse My Outfit
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M8.5 8.5l5 5M13.5 8.5l-5 5"/></svg>
+              </button>
+              <p class="form-note" style="text-align:center;">Your image is used only to generate your styling recommendations. It is processed entirely in your browser and never uploaded or stored.</p>
+            </div>
+          </div>
+
+          <!-- Loading panel -->
+          <div class="loading" id="loading-panel" role="status" aria-live="polite">
+            <div class="tie-load"></div>
+            <div class="spinner-ring"></div>
+            <p class="loading-title">Analysing your outfit…</p>
+            <p class="loading-text">Reading colours, patterns and style. One moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Shoptie — home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span>
+              <span class="brand-name">Shoptie<span>.</span></span>
+              <span class="brand-tag">AI Stylist</span>
+            </span>
+          </a>
+          <p>AI-powered tie styling.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stylist.html">AI Stylist</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" aria-label="Featured">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="stylist.html#demo">Try a Demo</a></li>
+            <li><a href="results.html">Sample Results</a></li>
+            <li><a href="stylist.html">Upload Your Outfit</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Shoptie. All rights reserved.</span>
+        <span>Made with care in the UK · Shoptie.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tie-svg.js"></script>
+  <script src="assets/js/ai-service.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/stylist.js"></script>
+</body>
+</html>
