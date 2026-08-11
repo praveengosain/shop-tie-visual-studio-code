@@ -1,7 +1,7 @@
 # Shoptie — AI Stylist
 
 AI-powered tie matching for **Shoptie.co.uk**. Upload a photo of your shirt, suit or
-coat and get tailored tie recommendations with colours, patterns, matching reasons
+coat and get tailored tie recommendations with appealing colours, patterns, matching reasons
 and styling advice.
 
 ## Tech
