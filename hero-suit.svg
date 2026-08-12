@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" role="img" aria-label="Elegant man in a navy suit with a burgundy tie">
+  <!-- Neck -->
+  <rect x="212" y="196" width="56" height="66" rx="12" fill="#21304f"/>
+  <!-- Head -->
+  <circle cx="240" cy="152" r="54" fill="#e6d7bd"/>
+  <path d="M185 140 C183 92 297 92 295 140 C306 124 306 92 240 80 C174 92 174 124 185 140 Z" fill="#1b1b1f" opacity="0.92"/>
+  <circle cx="186" cy="154" r="9" fill="#e6d7bd"/>
+  <circle cx="294" cy="154" r="9" fill="#e6d7bd"/>
+  <circle cx="186" cy="172" r="4" fill="#d3ae63"/>
+  <circle cx="294" cy="172" r="4" fill="#d3ae63"/>
+  <!-- Jacket / shoulders -->
+  <path d="M58 560 L152 336 L198 288 L240 322 L282 288 L328 336 L422 560 Z" fill="#1d2c4f"/>
+  <!-- Lapels -->
+  <path d="M198 288 L240 322 L224 362 L192 332 Z" fill="#16233f"/>
+  <path d="M282 288 L240 322 L256 362 L288 332 Z" fill="#16233f"/>
+  <!-- Shirt -->
+  <path d="M212 292 L268 292 L252 340 L228 340 Z" fill="#ece5d5"/>
+  <path d="M240 320 L226 398 L210 344 Z" fill="#f7f2e7"/>
+  <path d="M240 320 L254 398 L270 344 Z" fill="#e6ddca"/>
+  <!-- Collar tips -->
+  <path d="M212 292 L228 340 L218 300 Z" fill="#fdfaf4"/>
+  <path d="M268 292 L252 340 L262 300 Z" fill="#fdfaf4"/>
+  <!-- Tie blade -->
+  <path d="M232 322 L248 322 L254 468 L240 502 L226 468 Z" fill="#6d1f2e"/>
+  <path d="M231 322 L235 322 L241 470 L238 486 Z" fill="#8b2436" opacity="0.85"/>
+  <path d="M232 324 L239 324 L243 470 L240 480 Z" fill="#8b2436" opacity="0.45"/>
+  <!-- Tie knot -->
+  <path d="M227 318 L253 318 L255 338 L225 338 Z" fill="#5f1630"/>
+  <!-- Tie bar -->
+  <rect x="231" y="356" width="18" height="3.4" rx="1.7" fill="#d3ae63"/>
+  <!-- Pocket square -->
+  <path d="M128 396 L150 396 L145 372 L139 374 L133 371 Z" fill="#d3ae63"/>
+  <!-- Gold accent line on lapel -->
+  <path d="M204 296 L224 344" stroke="#d3ae63" stroke-width="2.4" opacity="0.55" stroke-linecap="round"/>
+</svg>
